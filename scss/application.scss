@@ -2,8 +2,6 @@
 //  Imports
 // =========================================
 
-@import 'main_nav',
-        'intro',
-        'main_content',
-        'footer',
-        'footer_nav',
+@import 'components/index',
+        'base/index',
+        'layout/index';

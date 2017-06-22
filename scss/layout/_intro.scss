@@ -1,0 +1,35 @@
+// =========================================
+//  Intro
+// =========================================
+
+.intro {
+  width: 90%;
+  text-align: center;
+  margin: 2em auto 0;
+  padding-bottom: 2em;
+  color: $white;
+  font-size: 1.25em;
+  @media #{$brk-m} {
+    margin-top: 0;
+  }
+  @media #{$brk-l} {
+    max-width: 1150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  img {
+    @extend %center;
+    width: 100%;
+    @media #{$brk-m} {
+      float: right;
+      width: 35%;
+    }
+  }
+  &-text {
+    @media #{$brk-m} {
+      text-align: left;
+      font-size: 1.1em;
+      width: 60%;
+    }
+  }
+}

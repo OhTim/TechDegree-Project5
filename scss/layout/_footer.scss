@@ -1,0 +1,37 @@
+// =========================================
+//  Footer
+// =========================================
+
+.main-footer {
+  width: 90%;
+  text-align: center;
+  margin: 10px auto 0;
+  padding: 10px 0px 0px;
+  color: $white;
+  @media #{$brk-m} {
+    font-size: 1.1em;
+  }
+}
+
+// contact, contact-information, contact-information li, contact-information a
+
+.contact {
+  margin-bottom: 30px;
+  &-info {
+    @media #{$brk-m} {
+      width: 50%;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  &-information {
+    padding: 0 0 40px;
+    margin-top: 35px;
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: $yellow;
+    }
+  }
+}

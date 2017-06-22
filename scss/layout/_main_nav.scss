@@ -1,0 +1,53 @@
+// =========================================
+//  Main-nav
+// =========================================
+
+.main-header {
+  @extend %center;
+  width: 90%;
+  @media #{$brk-l} {
+    max-width: 1150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.name {
+  margin-top: 0px;
+  padding-top: 1em;
+  color: $white;
+  @media #{$brk-l} {
+    float: left;
+  }
+}
+
+
+// Main-nav, Main-nav li, Main-nav a, Main-nav a:hover
+
+.main-nav {
+  padding-left: 0;
+  @media #{$brk-l} {
+    float: right;
+  }
+  li {
+    margin: 5px 0;
+    padding: 0;
+    @media #{$brk-m} {
+      display: inline-block;
+    }
+  }
+  a {
+    background-color: #fff;
+    display: block;
+    padding: 10px 20px;
+    color: $black;
+      @media #{$brk-m} {
+        background-color: inherit;
+        color: white;
+        font-size: 1.6em;
+    }
+  }
+  a:hover {
+    color: $spindle;
+  }
+}

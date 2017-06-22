@@ -1,0 +1,56 @@
+// =========================================
+//  Footer-nav
+// =========================================
+
+// Footer-bottom, Footer-name, Footer-nav, Footer-nav a, Footer-nav a:hover
+
+.footer {
+  &-bottom {
+    @extend %center;
+    border-top: 1px solid $grey;
+    width: 90%;
+    max-width: 1150px;
+  }
+  &-name {
+    margin: 15px 0px 20px 20px;
+    font-size: 1em;
+    color: $white;
+    font-style: normal;
+    display: inline-block;
+    float: left;
+    @media #{$brk-m} {
+      font-size: 1.2em;
+    }
+  }
+  &-nav {
+    float: right;
+    margin: 15px 20px 10px 0;
+    padding: 0;
+    a {
+      color: $white;
+      font-size: 1.2em;
+      font-weight: 800;
+      margin: 0 5px;
+      padding: 10px 5px;
+      text-transform: uppercase;
+    }
+    a:hover {
+       color: $spindle;
+    }
+  }
+}
+
+
+.desktop {
+  display: none;
+  @media #{$brk-m} {
+    display: inline-block;
+  }
+}
+
+.mobile {
+  font-size: .8em;
+  @media #{$brk-m} {
+    display: none;
+  }
+}

@@ -1,0 +1,126 @@
+// =========================================
+//  Main-content
+// =========================================
+
+// Primary, Primary img, Primary-list Primary-list Li
+
+.primary {
+  @extend %center;
+  width: 90%;
+  @media #{$brk-l} {
+    max-width: 1150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  img {
+    width: 90%;
+  }
+  &-list {
+    padding: 0;
+    li {
+      @media #{$brk-m} {
+        float: left;
+        width: 45%;
+        text-align: center;
+        margin: 0 2.5%;
+      }
+      @media #{$brk-l} {
+        width: 30%;
+        margin: 10px 1.66%;
+      }
+    }
+    li:nth-child(2n+1) {
+      @media #{$brk-m} {
+        clear: both;
+      }
+      @media #{$brk-l} {
+        clear: none;
+      }
+    }
+    li:nth-child(3n+1) {
+      @media #{$brk-l} {
+        clear: both;
+      }
+    }
+  }
+}
+
+// Skills, Skills img, skills-list, skills-list li, skills-list li:nth-child(2n+1), skills-list li:nth-child(2n+1), skills-list li:nth-child(3n+1)
+
+.skills {
+  @extend %center;
+  width: 90%;
+  max-width: 1150px;
+  img {
+    width: 90%;
+  }
+  &-list {
+    padding: 0;
+    li {
+      @media #{$brk-m} {
+        float: left;
+        width: 45%;
+        text-align: center;
+        margin: 0 2.5%;
+      }
+      @media #{$brk-m} {
+        width: 30%;
+        margin: 10px 1.66%;
+      }
+    }
+    li:nth-child(2n+1) {
+      @media #{$brk-m} {
+        clear: both;
+      }
+      @media #{$brk-l} {
+        clear: none;
+      }
+    }
+    li:nth-child(3n+1) {
+      @media #{$brk-l} {
+        clear: both;
+      }
+    }
+  }
+}
+
+.sub-header {
+  font-weight: 700;
+  margin: 15px 0px 0px;
+  @media #{$brk-l} {
+    font-size: 1.4em;
+  }
+}
+
+.sub-text {
+  margin: 10px auto 25px;
+  width: 85%;
+  text-align: center;
+  @media #{$brk-l} {
+    font-size: 1.2em;
+  }
+}
+
+/* ID's ----------------------*/
+/* Main-content ----*/
+
+#portfolio,
+#skills {
+  font-size: 1.5em;
+}
+
+#skills {
+  margin: 20px auto;
+}
+
+#portfolio {
+  @media #{$brk-m} {
+    display: block;
+    border-bottom: none;
+  }
+  @media #{$brk-l} {
+    text-transform: none;
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,9 @@
+// =========================================
+//  Mixins
+// =========================================
+
+@mixin font-style ($size: null, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
