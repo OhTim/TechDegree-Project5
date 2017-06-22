@@ -2,7 +2,7 @@
   text-align: center;
   margin: auto; }
 
-.intro img {
+.main-header, .intro, .primary-list, .skills-list, .footer-bottom {
   content: " ";
   display: table;
   clear: both; }
@@ -146,7 +146,7 @@ footer {
         width: 45%;
         text-align: center;
         margin: 0 2.5%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .skills-list li {
         width: 30%;
         margin: 10px 1.66%; } }

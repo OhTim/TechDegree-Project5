@@ -4,6 +4,7 @@
 
 .intro {
   @include font-style(1.25em, $color: $white);
+  @extend %clearfix;
   width: 90%;
   text-align: center;
   margin: 2em auto 0;
@@ -18,7 +19,6 @@
   }
   img {
     @extend %center;
-    @extend %clearfix;
     width: 100%;
     @media #{$brk-m} {
       float: right;

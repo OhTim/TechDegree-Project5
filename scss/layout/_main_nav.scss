@@ -4,6 +4,7 @@
 
 .main-header {
   @extend %center;
+  @extend %clearfix;
   width: 90%;
   @media #{$brk-l} {
     max-width: 1150px;

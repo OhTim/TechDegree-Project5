@@ -16,6 +16,7 @@
     width: 90%;
   }
   &-list {
+    @extend %clearfix;
     padding: 0;
     li {
       @media #{$brk-m} {
@@ -55,6 +56,7 @@
     width: 90%;
   }
   &-list {
+    @extend %clearfix;
     padding: 0;
     li {
       @media #{$brk-m} {
@@ -63,7 +65,7 @@
         text-align: center;
         margin: 0 2.5%;
       }
-      @media #{$brk-m} {
+      @media #{$brk-l} {
         width: 30%;
         margin: 10px 1.66%;
       }
