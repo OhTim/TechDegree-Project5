@@ -12,10 +12,8 @@
     max-width: 1150px;
   }
   &-name {
+    @include font-style(1em, $color: $white, $style: normal);
     margin: 15px 0px 20px 20px;
-    font-size: 1em;
-    color: $white;
-    font-style: normal;
     display: inline-block;
     float: left;
     @media #{$brk-m} {
@@ -27,9 +25,7 @@
     margin: 15px 20px 10px 0;
     padding: 0;
     a {
-      color: $white;
-      font-size: 1.2em;
-      font-weight: 800;
+      @include font-style(1.2em, 800, $white);
       margin: 0 5px;
       padding: 10px 5px;
       text-transform: uppercase;
@@ -39,7 +35,6 @@
     }
   }
 }
-
 
 .desktop {
   display: none;

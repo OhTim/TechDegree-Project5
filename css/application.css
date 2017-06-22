@@ -2,6 +2,11 @@
   text-align: center;
   margin: auto; }
 
+.intro img {
+  content: " ";
+  display: table;
+  clear: both; }
+
 .clearfix::after {
   content: " ";
   display: table;
@@ -64,19 +69,19 @@ footer {
     color: black; }
     @media (min-width: 768px) {
       .main-nav a {
-        background-color: inherit;
-        color: white;
-        font-size: 1.6em; } }
+        font-size: 1.6em;
+        color: #fff;
+        background-color: inherit; } }
   .main-nav a:hover {
     color: #bed8ea; }
 
 .intro {
+  font-size: 1.25em;
+  color: #fff;
   width: 90%;
   text-align: center;
   margin: 2em auto 0;
-  padding-bottom: 2em;
-  color: #fff;
-  font-size: 1.25em; }
+  padding-bottom: 2em; }
   @media (min-width: 768px) {
     .intro {
       margin-top: 0; } }
@@ -185,9 +190,9 @@ footer {
     border-bottom: none; } }
 @media (min-width: 1024px) {
   #portfolio {
-    text-transform: none;
     font-size: 2.2em;
-    font-weight: 500; } }
+    font-weight: 500;
+    text-transform: none; } }
 
 .main-footer {
   width: 90%;
@@ -219,10 +224,10 @@ footer {
   width: 90%;
   max-width: 1150px; }
 .footer-name {
-  margin: 15px 0px 20px 20px;
   font-size: 1em;
   color: #fff;
   font-style: normal;
+  margin: 15px 0px 20px 20px;
   display: inline-block;
   float: left; }
   @media (min-width: 768px) {
@@ -233,9 +238,9 @@ footer {
   margin: 15px 20px 10px 0;
   padding: 0; }
   .footer-nav a {
-    color: #fff;
     font-size: 1.2em;
     font-weight: 800;
+    color: #fff;
     margin: 0 5px;
     padding: 10px 5px;
     text-transform: uppercase; }

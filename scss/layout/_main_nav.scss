@@ -42,9 +42,8 @@
     padding: 10px 20px;
     color: $black;
       @media #{$brk-m} {
+        @include font-style(1.6em, $color: $white);
         background-color: inherit;
-        color: white;
-        font-size: 1.6em;
     }
   }
   a:hover {
